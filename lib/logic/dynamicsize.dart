@@ -6,8 +6,8 @@ abstract class DynamicSize {
 
 class DynamicSizeImpl extends DynamicSize {
   @override
-  Size getSize(GlobalKey<State<StatefulWidget>> pageKey) {
-    RenderBox _pageBox = pageKey.currentContext.findRenderObject();
+  Size getSize(GlobalKey<State<StatefulWidget>> pagekey) {
+    RenderBox _pageBox = pagekey.currentContext.findRenderObject();
     return _pageBox.size;
   }
 }
